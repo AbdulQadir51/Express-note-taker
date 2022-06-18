@@ -1,32 +1,36 @@
+// import express
 const express = require('express');
+// secure url
+express.urlencoded({ extended: true })
+
 const app = express();
 const path = require("path");
-const db = require('./db/db')
 
+
+// import notes routes
+const notesRoutes = require('./routes/notesRoutes');
+// import html routes
+const htmlRoutes = require('./routes/htmlRoutes');
 
 
 
 // middle ware
 app.use(express.json());
+
 app.use(express.urlencoded({ extended: true }));
 // allows you to save/configure style sheet/ javascript
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get('/', (req, res) => {
-    res.render("index.html")
-})
-
-app.get('/notes', (req, res) => {
-    res.render("notes.html")
-})
+// use html routes
+app.use('/', htmlRoutes);
+// use notes api routes
+app.use('/api', notesRoutes);
 
 
-app.get('/api/notes', (req, res) => {
-    console.log(db)
-    res.json(db)
-})
 
 
-app.listen(3001, () => {
-    console.log(`API server now on port 3001!`);
+// local and heroku app port number (local -> 3001 and heroku -> 80)
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+    console.log(`API server now on port ${PORT}!`);
 });
