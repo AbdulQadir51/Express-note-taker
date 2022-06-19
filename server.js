@@ -13,7 +13,6 @@ const notesRoutes = require('./routes/notesRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
 
-
 // middle ware
 app.use(express.json());
 
