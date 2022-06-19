@@ -1,5 +1,12 @@
-[{
+[
+  {
     "title": "note 1",
     "text": "this is my note 1",
     "id": 1655583849946
-}]
+  },
+  {
+    "title": "Hello",
+    "text": "world",
+    "id": 1655634375766
+  }
+]
