@@ -12,5 +12,5 @@ https://github.com/AbdulQadir51/Express-note-taker
 https://expressnotetakers5253.herokuapp.com/
     
 ## Screnshots
-![screenshot 1](https://abdulqadir51.github.io/Express-note-taker/screenshots/screenshot1.png) 
-![screenshot 2](https://abdulqadir51.github.io/Express-note-taker/screenshots/screenshot2.png) 
+![screenshot 1](https://expressnotetakers5253.herokuapp.com/assets/screenshots/screenshot1.png) 
+![screenshot 2](https://expressnotetakers5253.herokuapp.com/assets/screenshots/screenshot2.png) 
