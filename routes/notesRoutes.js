@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const db = require('../db/db')
-const { filterById, createNewNote, validateNotes, deleteNote } = require('../../lib/notes')
+const { filterById, createNewNote, validateNotes, deleteNote } = require('../lib/notes')
 
 // GET Notes API endpoint
 router.get('/notes', (req, res) => {
