@@ -13,4 +13,4 @@ https://expressnotetakers5253.herokuapp.com/
     
 ## Screnshots
 ![screenshot 1](public/assets/screenshots/screenshot1.png) 
-![screenshot 2](public/screenshots/screenshot2.png) 
+![screenshot 2](public/assets/screenshots/screenshot2.png) 
